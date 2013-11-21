@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).width()>1200&&$("li.member a").hover(function(){$("li.membertext a").animate({"margin-right":"0px"},150)},function(){$("li.membertext a").animate({"margin-right":"-160px"},150)}),$("body").hasClass("home")&&$(".navbar-brand span").addClass("hidden"),console.log($("a.home").position())});

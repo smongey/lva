@@ -34,6 +34,8 @@ titlePosition = function(){
 		});		
 
 	}
+
+	console.log( -(slideHeight + titleHeight - 20) );
 };
 
 

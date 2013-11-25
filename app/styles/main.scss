@@ -47,13 +47,7 @@ ul.nav {
 
 // HOMEPAGE
 #slides { position: relative; margin-top: -72px; width: 100%; padding: 0 15px; overflow: hidden;
-	.holder { height: 500px;
-		background: url('/images/banner.jpg') no-repeat center center; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
+	.holder { height: 500px; background: url('/images/banner.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 	img { min-width: 100%; width: 100%; min-height: 100%; }
 	.titlebox { position: absolute; top: 180px; }
 	a#logo {  display: block; width: 115px; height: 160px; background: white url('/images/logo.png') no-repeat; text-indent: -9999px; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; }
@@ -96,8 +90,9 @@ ul.nav {
 }
 
 body.inner { background: $brown;
-	#slides {
-		max-height: 200px; overflow: hidden;
+	#slides { overflow: hidden;
+		.holder { height: 200px; background: url('/images/banner.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+		img { min-width: 100%; width: 100%; min-height: 100%; }
 	}
 	.left { color: white; }
 	.left ul { margin: 0; padding: 0; }
@@ -136,6 +131,7 @@ body.inner { background: $brown;
 	.right { margin-top: 40px; }
 	.article { margin-bottom: 30px; }
 	body.inner .left { display: none; }
+	body.inner #slides .holder { height: 200px; }
 }
 
 @media (max-width: 767px) {
@@ -152,6 +148,7 @@ body.inner { background: $brown;
 	body.inner { background: white;
 		a.navbar-brand { display: block; }
 	}
+	body.inner #slides .holder { height: 200px; }
 }
 
 @media (max-width: 686px) {
@@ -173,10 +170,10 @@ body.inner { background: $brown;
 	.left { padding:0 40px; }
 	#nav { padding-left: 0px; }
 	body.inner {
-		#slides img { opacity: 0; }
 		a.navbar-brand { font-size: .65em; }
 		a.navbar-brand span { display: none; }
 	}
+	body.inner #slides .holder { height: 200px; }
 	.right {
 		a.viewall { display: none; }
 	}

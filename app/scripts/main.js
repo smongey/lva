@@ -1,11 +1,13 @@
-memberButton();
-titlePosition();
 
 $(document).ready(function(){
 
 	if ($('body').hasClass('home')) {
 		$('.navbar-brand span').addClass('hidden');
 	}
+
+	memberButton();
+	titlePosition();
+
 
 	$(window).resize(function(){
 		titlePosition();

@@ -18,12 +18,24 @@ $(document).ready(function(){
 });
 
 titlePosition = function(){
-	var titleHeight = $('.title').height()/2;
-	var slideHeight = $('.holder').height()/2;
-	$('#slides .title').css({
-		'margin-top' : -(slideHeight + titleHeight - 20)
-	});
+
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+
+		$('#slides .title').css({
+			'margin-top' : -140
+		});	
+
+	} else {
+
+		var titleHeight = $('.title').height()/2;
+		var slideHeight = $('.holder').height()/2;
+		$('#slides .title').css({
+			'margin-top' : -(slideHeight + titleHeight - 20)
+		});		
+
+	}
 };
+
 
 memberButton = function(){
 	if ($(window).width() > 1200) {

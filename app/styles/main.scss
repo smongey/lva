@@ -28,8 +28,8 @@ h1, h2, h3, h4 { font:21px/29px 'SkolarWeb', Times, serif;  }
 .navbar-toggle { z-index: 9999; background: rgba(255,255,255,.7); outline: none; margin: 0; border-radius: 0px; padding: 13px; }
 
 ul.nav {
-	li { background: rgba(255,255,255,.6); font-size: .8em; transition: all ease .2s;
-		a { color: $brown; transition: all ease .2s; }
+	li { background: rgba(255,255,255,.6); font-size: .8em; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s;
+		a { color: $brown; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; }
 	}
 	li:hover { background: white;
 		a { background: white; }
@@ -49,7 +49,7 @@ ul.nav {
 	.title {  }
 	.holder { max-height: 500px; overflow: hidden; }
 	img { min-width: 100%; width: 100%; }
-	a#logo {  display: block; width: 115px; height: 160px; background: white url('/images/logo.png') no-repeat; text-indent: -9999px; transition: all ease .2s; }
+	a#logo {  display: block; width: 115px; height: 160px; background: white url('/images/logo.png') no-repeat; text-indent: -9999px; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; }
 	a#logo:hover { background: rgba(255,255,255,.8) url('/images/logo.png') no-repeat; }
 	h1 { font:48px/54px 'SkolarWeb', Times, serif; color:white; text-shadow: 2px 2px 0px rgba($brown, .5); letter-spacing: .5px; }
 }
@@ -71,17 +71,17 @@ ul.nav {
 	background: $brown;
 	.row { }
 	h2 { margin-bottom:20px; color: $yellow; text-transform: uppercase; font-size: 1em; letter-spacing: .1em; }
-	a.viewall { color: white; width:110px; text-align: center; margin-top: -60px; right:40px; padding: 5px; position: absolute; text-transform: uppercase; font-size: .9em; letter-spacing: .1em; display: block; border: 1px solid white; transition: all ease .2s; }
+	a.viewall { color: white; width:110px; text-align: center; margin-top: -60px; right:40px; padding: 5px; position: absolute; text-transform: uppercase; font-size: .9em; letter-spacing: .1em; display: block; border: 1px solid white; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; }
 	a.viewall:hover { background: white; color: $brown; text-decoration: none; }
 	.article { padding-right: 10px;
 		h4 { color: white; }
 		img { margin: 10px 0 15px; width: 95%; }
 		p { color: white; }
-		a { width:110px; color: white; display: block; text-align: center; padding: 5px; display: block; border: 1px solid white; transition: all ease .2s; }
+		a { width:110px; color: white; display: block; text-align: center; padding: 5px; display: block; border: 1px solid white; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; }
 		a:hover { background: white; color: $brown; text-decoration: none; }
 	}
 	footer.row { margin:0; padding:0; color: white; border-top: 1px solid white; margin-top: 100px; padding-top: 20px; padding-bottom: 60px; }
-	footer a, footer p { color: white; text-decoration: none; opacity:.6; transition:all ease .2s; }
+	footer a, footer p { color: white; text-decoration: none; opacity:.6; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; }
 	footer a:hover { opacity: 1; }
 	footer a.home { display: block; text-indent: -9999px; margin-left: -15px; width: 20px; height: 20px; background: url('/images/house.png') no-repeat; }
 	footer a.home:hover { opacity: 1; }
@@ -93,7 +93,7 @@ body.inner { background: $brown;
 	}
 	.left { color: white; }
 	.left ul { margin: 0; padding: 0; }
-	.left li { list-style-type: none; a { font-family: 'SkolarWeb', Times, serif; color:white; transition: all ease .2s; } a:hover {  color: $yellow; } }
+	.left li { list-style-type: none; a { font-family: 'SkolarWeb', Times, serif; color:white; -webkit-transition: all ease .2s; -moz-transition: all ease .2s; transition: all ease .2s; } a:hover {  color: $yellow; } }
 	.left li.title { text-transform: uppercase; color: $grey; margin-top: 20px; letter-spacing: 0.1em; }
 	.left footer { position: absolute; margin-top: 620px;
 		.text { color: white; }
@@ -142,7 +142,7 @@ body.inner { background: $brown;
 @media (max-width: 686px) {
 	.left { padding:0 40px; }
 	#slides { 
-		a#logo { -webkit-transform: scale(.8); }
+		a#logo { -webkit-transform: scale(.8); -moz-transform: scale(.8); transform: scale(.8); }
 		h1 { font-size: 28px; line-height: 36px; margin-top: 40px; margin-left: -30px; }
 	} 
 	footer.row p { margin-left: -15px; margin-top: 10px; }
@@ -150,7 +150,7 @@ body.inner { background: $brown;
 
 @media (max-width: 500px) {
 	#slides {
-		a#logo { -webkit-transform: scale(.6); }
+		a#logo { -webkit-transform: scale(.6); -moz-transform: scale(.6); transform: scale(.6); }
 		h1 { font-size: 21px; line-height: 28px; margin-left: -40px; margin-top: 50px; }
 	}
 	.left { padding:0 40px; }
@@ -170,7 +170,7 @@ body.inner { background: $brown;
 		h2, a { font-size: 18px; line-height: 24px; }
 	}
 	#slides {
-		a#logo { -webkit-transform: scale(.5); }
+		a#logo { -webkit-transform: scale(.5); -moz-transform: scale(.5); transform: scale(.5); }
 		h1 { font-size: 16px; line-height:21px; padding-right: 45px; }
 		.col-xs-5 { margin-left: -20px; }
 	}
